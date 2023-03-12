@@ -1,15 +1,32 @@
-magic_word = "abracadabra"
+#
+# !Check if "apple" is present in the fruits set.
+fruits = {"apple", "banana", "cherry"}
+if "apple" in fruits:
+    print("Yes, apple is a fruit!")
 
-unique_alphabets: set[str] = set(magic_word)
+
+# !Use the add method to add "orange" to the fruits set.
+fruits = {"apple", "banana", "cherry"}
+fruits.add("orange")
+print(fruits)
 
 
-print(unique_alphabets)
+# Use the correct method to add multiple items (more_fruits) to the fruits set.
+fruits = {"apple", "banana", "cherry"}
+more_fruits = ["orange", "mango", "grapes"]
+fruits.update(more_fruits)
+print(fruits)
 
 
-sentence = "the big blue sky and the big blue ocean"
-word_list = sentence.split()
-# print(word_list)
-unique_words = set(word_list)
+# Use the remove method to remove "banana" from the fruits set.
+fruits = {"apple", "banana", "cherry"}
+fruits.remove("banana")
+print(fruits)
 
-unique_words.update(["govind", "kumar"])
-print(unique_words)
+
+# Use the discard method to remove "banana" from the fruits set.
+fruits = {"apple", "banana", "cherry"}
+fruits.discard("banana")
+print(fruits)
+
+
