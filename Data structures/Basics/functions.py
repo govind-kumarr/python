@@ -37,5 +37,13 @@ def myfunc1(n):
 
 
 mydoubler = myfunc1(2)
-
 print(mydoubler(11))
+
+
+def hello():
+    print("Hello world!")
+
+def good_morning():
+    print("Good morning!")
+
+
